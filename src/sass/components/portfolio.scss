@@ -1,0 +1,29 @@
+.portfolio--container {
+  .portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+
+    .top{
+        text-align: center;
+        h2{
+            margin-bottom: 1rem;
+        }
+
+    }
+    .grid{
+        display: flex;
+        justify-content: content;
+        width: 90%;
+        gap: 2rem;
+        // margin: 3rem auto;
+
+        @media (max-width: $layout-breakpoint-xsmall) {
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+          }
+    }
+  }
+}

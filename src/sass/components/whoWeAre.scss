@@ -1,0 +1,128 @@
+.about--container {
+  padding: 6rem 0;
+  .about {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    @media (max-width: $layout-breakpoint-small) {
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+    @media (max-width: $layout-breakpoint-xsmall) {
+      width: 98%;
+    }
+    .about--details {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      max-width: 25%;
+      p {
+        line-height: 1.5;
+        color: black;
+        font-size: 1.1rem;
+        a{
+        text-decoration: underline;
+        cursor: pointer;
+        }
+      }
+      @media (max-width: $layout-breakpoint-small) {
+        max-width: 98%;
+        text-align: center;
+      }
+    }
+    .about--icons {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      i {
+        font-size: 2.5rem;
+        color: $icons;
+      }
+      @media (max-width: $layout-breakpoint-small) {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 90%;
+      }
+      @media (max-width: $layout-breakpoint-xsmall) {
+        align-items: center;
+      }
+
+      .about--icons-left {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        .about--service {
+          display: flex;
+          gap: 1rem;
+          max-width: 18rem;
+          @media (max-width: $layout-breakpoint-small) {
+            max-width: 100%;
+          }
+          @media (max-width: $layout-breakpoint-xsmall) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+          }
+          .text {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            .header {
+              font-family: 'Gwendolyn', cursive;
+              font-weight: 700;
+              font-size: 1.2rem;
+              color: rgb(40, 40, 40);
+              &:hover {
+                color: $icons;
+              }
+            }
+            .info {
+              line-height: 1.5;
+            }
+          }
+        }
+      }
+      .about--icons-right {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        .about--service {
+          display: flex;
+          gap: 1rem;
+          max-width: 18rem;
+          @media (max-width: $layout-breakpoint-small) {
+            max-width: 100%;
+          }
+          @media (max-width: $layout-breakpoint-xsmall) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+          }
+          .text {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            .header {
+              font-family: 'Gwendolyn', cursive;
+              font-weight: 700;
+              font-size: 1.2rem;
+              color: rgb(40, 40, 40);
+              &:hover {
+                color: $icons;
+              }
+            }
+            .info {
+              line-height: 1.5;
+            }
+          }
+        }
+      }
+    }
+  }
+}

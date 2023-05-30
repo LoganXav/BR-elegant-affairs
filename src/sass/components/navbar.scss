@@ -1,0 +1,41 @@
+.navbar--container {
+  // background-color: #fff;
+  width: 100%;
+  // position: absolute;
+  // z-index: 10;
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    width: 98%;
+    margin: 1rem auto;
+
+    .logo {
+      img {
+        width: 10rem;
+        cursor: pointer;
+        @media (max-width: $layout-breakpoint-medium) {
+          width: 6rem;
+        }
+      }
+    }
+    .menu {
+      transform: translateY(-.5rem);
+      .number {
+        @media (max-width: $layout-breakpoint-xsmall) {
+          display: none;
+        }
+      }
+      .menu--icon {
+        display: none;
+        @media (max-width: $layout-breakpoint-xsmall) {
+          cursor: pointer;
+          display: flex;
+          margin-right: 3rem;
+          color: black;
+        }
+      }
+    }
+  }
+}

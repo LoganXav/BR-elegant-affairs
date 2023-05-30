@@ -1,0 +1,24 @@
+@import "abstracts/variables";
+@import "base/global";
+@import "base/reset";
+@import "base/typography";
+
+// COMPONENTS
+@import "components/navbar";
+@import "components/hero";
+@import "components/whoWeAre";
+@import "components/plan";
+@import "components/portfolio";
+@import "components/review";
+@import "components/weddingVendors";
+@import "components/ideas";
+@import "components/contact";
+@import "components/footer";
+
+// UTILS
+@import "components/card";
+@import "components/menu";
+
+ // PAGES
+@import "pages/home";
+@import "pages/gallery";

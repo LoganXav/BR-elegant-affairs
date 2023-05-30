@@ -1,0 +1,81 @@
+.contact--container {
+  width: 100%;
+  .contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    margin: 0 auto;
+    .details {
+      display: flex;
+      margin: 3rem auto;
+      width: 60%;
+      gap: 2rem;
+      justify-content: space-between;
+      @media (max-width: $layout-breakpoint-small) {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+      }
+      hr {
+        outline: none;
+        border: none;
+        border-left: 0.5px solid lightgray;
+      }
+
+      .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+        height: 10rem;
+        @media (max-width: $layout-breakpoint-small) {
+          height: 10rem;
+        }
+        .address {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 1rem;
+        }
+      }
+      .contact-us {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 10rem;
+        text-align: center;
+        @media (max-width: $layout-breakpoint-small) {
+          height: 7rem;
+        }
+        h3 {
+          font-family: "Gwendolyn", cursive;
+          font-weight: 700;
+          font-size: 2rem;
+        }
+      }
+      .connect {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 10rem;
+        align-items: center;
+        text-align: center;
+        @media (max-width: $layout-breakpoint-small) {
+          height: 7rem;
+        }
+        .address {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 1rem;
+        }
+      }
+    }
+  }
+}
