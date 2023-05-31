@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import { Card } from "./Card";
-import  img1 from "../assets/portfolio-2.jpg";
-import  img2 from "../assets/portfolio-1.jpg";
-import  img3 from "../assets/portfolio-3.jpg";
+import img1 from "../assets/portfolio-2.jpg";
+import img2 from "../assets/portfolio-1.jpg";
+import img3 from "../assets/portfolio-3.jpg";
+import { motion } from "framer-motion";
 
 export const Portfolio = () => {
   const data = [
@@ -31,15 +32,33 @@ export const Portfolio = () => {
   return (
     <div className="portfolio--container">
       <div className="portfolio">
-        <div className="top">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{
+            ease: [0.6, 0.01, 0.05, 0.9],
+            duration: 1,
+          }}
+          viewport={{ once: true }}
+          className="top"
+        >
           <h2>PORTFOLIO</h2>
           <h4>OUR AMAZING WORK</h4>
-        </div>
-        <div className="grid">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, x: 200 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{
+            ease: [0.6, 0.01, 0.05, 0.9],
+            duration: 1,
+          }}
+          viewport={{ once: true }}
+          className="grid"
+        >
           {data.map((event) => (
-            <Card event={event} key={event.id}/>
+            <Card event={event} key={event.id} />
           ))}
-        </div>
+        </motion.div>
         <Link to="/gallery">
           <button>VIEW MORE EVENTS</button>
         </Link>

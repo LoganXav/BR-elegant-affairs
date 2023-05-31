@@ -5,6 +5,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
+import { motion } from "framer-motion";
 
 export const Review = () => {
   const data = [
@@ -22,7 +23,7 @@ export const Review = () => {
     },
     {
       id: 3,
-      text: "B & R Elegant Affairs went above and beyond to make our corporate event a huge success. From the initial planning stages to the day of the event, their attention to detail and professionalism were exceptional. The venue was transformed into a sophisticated and elegant space that perfectly reflected our brand. The team flawlessly managed the logistics, ensuring a seamless experience for all attendees. We received numerous compliments from our guests, and we can't recommend B & R Elegant Affairs enough!" ,
+      text: "B & R Elegant Affairs went above and beyond to make our corporate event a huge success. From the initial planning stages to the day of the event, their attention to detail and professionalism were exceptional. The venue was transformed into a sophisticated and elegant space that perfectly reflected our brand. The team flawlessly managed the logistics, ensuring a seamless experience for all attendees. We received numerous compliments from our guests, and we can't recommend B & R Elegant Affairs enough!",
       name: "David",
       location: "Jacksonville",
     },
@@ -41,12 +42,22 @@ export const Review = () => {
         >
           {data.map((review) => (
             <SwiperSlide key={review.id} className="swiper-slide">
-              <div className="review">
+              <motion.div
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{
+                  delay: 0.25,
+                  ease: [0.6, 0.01, 0.05, 0.9],
+                  duration: 1,
+                }}
+                viewport={{ once: true }}
+                className="review"
+              >
                 <p>{review.text}</p>
                 <div className="about">
                   <h3> - {review.name}</h3>
                 </div>
-              </div>
+              </motion.div>
             </SwiperSlide>
           ))}
         </Swiper>

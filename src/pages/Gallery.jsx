@@ -144,6 +144,54 @@ const Gallery = () => {
       id: 26,
       img: img26,
     },
+    {
+      id: 27,
+      img: img27,
+    },
+    {
+      id: 28,
+      img: img28,
+    },
+    {
+      id: 29,
+      img: img29,
+    },
+    {
+      id: 30,
+      img: img30,
+    },
+    {
+      id: 31,
+      img: img31,
+    },
+    {
+      id: 32,
+      img: img32,
+    },
+    {
+      id: 33,
+      img: img33,
+    },
+    {
+      id: 34,
+      img: img34,
+    },
+    {
+      id: 35,
+      img: img35,
+    },
+    {
+      id: 36,
+      img: img36,
+    },
+    {
+      id: 37,
+      img: img37,
+    },
+    {
+      id: 38,
+      img: img38,
+    },
   ];
   const wedding = [
     {
@@ -213,42 +261,6 @@ const Gallery = () => {
     {
       id: 17,
       img: img17,
-    },
-    {
-      id: 18,
-      img: img18,
-    },
-    {
-      id: 19,
-      img: img19,
-    },
-    {
-      id: 20,
-      img: img20,
-    },
-    {
-      id: 21,
-      img: img21,
-    },
-    {
-      id: 22,
-      img: img22,
-    },
-    {
-      id: 23,
-      img: img23,
-    },
-    {
-      id: 24,
-      img: img24,
-    },
-    {
-      id: 25,
-      img: img25,
-    },
-    {
-      id: 26,
-      img: img26,
     },
   ];
   const birthday = [

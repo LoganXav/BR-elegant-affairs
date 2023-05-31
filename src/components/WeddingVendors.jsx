@@ -1,8 +1,20 @@
+import { motion } from "framer-motion";
+
 export const WeddingVendors = () => {
   return (
     <div className="vendors--container">
       <div className="left">
-        <div className="left--inner">
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.25,
+            ease: [0.6, 0.01, 0.05, 0.9],
+            duration: 1,
+          }}
+          viewport={{ once: true }}
+          className="left--inner"
+        >
           <h2>Wedding Vendors</h2>
           <p>
             We offer a comprehensive suite of services designed to bring your
@@ -25,7 +37,7 @@ export const WeddingVendors = () => {
               <h4>FLORAL ARRANGEMENTS</h4>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

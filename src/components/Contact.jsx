@@ -1,7 +1,18 @@
+import { motion } from "framer-motion";
+
 export const Contact = () => {
   return (
     <div className="contact--container">
-      <div className="contact">
+      <motion.div 
+       initial={{ opacity: 0 }}
+       whileInView={{ opacity: 1 }}
+       transition={{
+         delay: 0.25,
+         ease: [0.6, 0.01, 0.05, 0.9],
+         duration: 1,
+       }}
+       viewport={{ once: true }}
+      className="contact">
         <h2>Find us, Book us and stay a spell</h2>
         <div className="details">
           <div className="info">
@@ -27,7 +38,7 @@ export const Contact = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

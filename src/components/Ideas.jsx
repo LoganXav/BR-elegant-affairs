@@ -7,6 +7,7 @@ import img5 from "../assets/ideas5.jpg";
 import img6 from "../assets/ideas6.jpg";
 import img7 from "../assets/ideas7.jpg";
 import img8 from "../assets/ideas8.jpg";
+import { motion, AnimatePresence } from "framer-motion";
 
 export const Ideas = () => {
   const data = [
@@ -47,17 +48,39 @@ export const Ideas = () => {
   return (
     <div className="ideas--container">
       <div className="ideas">
-        <div className="header">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{
+            ease: [0.6, 0.01, 0.05, 0.9],
+            duration: 1,
+          }}
+          viewport={{ once: true }}
+          className="header"
+        >
           <h2>Ideas and tips</h2>
           <p>Browse our gallery for tips and inspiration</p>
-        </div>
-        <div className="grid">
-          {data.map((idea) => (
-            <div className="img-container" key={idea.id}>
-              <img src={idea.img} />
-            </div>
-          ))}
-        </div>
+        </motion.div>
+        <AnimatePresence>
+          <div className="grid">
+            {data.map((idea, index) => (
+              <motion.div
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{
+                  delay: 0 + index * 0.25,
+                  ease: [0.6, 0.01, 0.05, 0.9],
+                  duration: 1,
+                }}
+                viewport={{ once: true }}
+                className="img-container"
+                key={idea.id}
+              >
+                <img src={idea.img} />
+              </motion.div>
+            ))}
+          </div>
+        </AnimatePresence>
         <Link to="/gallery">
           <button>VIEW MORE INSPIRATION</button>
         </Link>
