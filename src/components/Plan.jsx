@@ -1,4 +1,4 @@
-import betty from "../assets/betty-crop.jpg";
+import betty from "../assets/betty-crop.png";
 
 export const Plan = () => {
   return (

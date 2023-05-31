@@ -43,6 +43,11 @@
           @media (max-width: $layout-breakpoint-xsmall) {
             width: calc(100% / 2);
           }
+          &.active{
+            background-color: $icons;
+            color: $light-text;
+
+          }
         }
       }
     }
