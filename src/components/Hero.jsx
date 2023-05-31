@@ -17,7 +17,7 @@ const Hero = () => {
           <div className="slider-text">
             <h1>Wedding Planner</h1>
             <p>
-            BRING YOUT EVENTS TO LIFE
+            BRING YOUR EVENTS TO LIFE
             </p>
           </div>
         </div>

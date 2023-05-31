@@ -42,7 +42,7 @@ export const Menu = ({ setMenuOpen }) => {
               <img src="https://media.istockphoto.com/id/1371802936/photo/beautiful-emotional-woman-with-perfect-make-up.jpg?b=1&s=170667a&w=0&k=20&c=Sdiq2RAY1MmqkzH_EEmGI1BzU7k-vKvN7zfep9CEUok=" />
             </div>
             <div className="address">
-              <h3>MIAMI</h3>
+              <h4>CONTACT US:</h4>
               <p>+1 (305) 586-0497</p>
             </div>
             <div className="contact">

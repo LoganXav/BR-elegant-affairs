@@ -66,6 +66,7 @@
           font-weight: 700;
           margin-bottom: 20px;
           text-align: center;
+          font-family: 'Cinzel Decorative', cursive;
           @media (max-width: $layout-breakpoint-medium) {
             font-size: 3rem;
           }
@@ -75,7 +76,7 @@
           font-size: .8rem;
           line-height: 28px;
           text-align: center;
-          letter-spacing: .7rem;
+          letter-spacing: .5rem;
           color: white;
         }
       }

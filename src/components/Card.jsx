@@ -1,15 +1,15 @@
-export const Card = () => {
+export const Card = ({ event }) => {
 
     return(
        
             <div className="card">
                 <div className="image">
-                    <img src="https://demo2wpopal.b-cdn.net/dreama/wp-content/uploads/2019/02/bn1.jpg" />
+                    <img src={event.img} />
                 </div>
                 <div className="info">
-                    <h3>Name</h3>
-                    <p>Location</p>
-                    <span>Date</span>
+                    <h2>{event.name}</h2>
+                    <p>{event.location}</p>
+                    <span>{event.year}</span>
                 </div>
             </div>
       

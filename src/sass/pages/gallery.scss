@@ -1,16 +1,17 @@
 .gallery--container {
-  margin: 4rem auto;
+  background-color: $white;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90%;
-
+  width: 100%;
+  
   .gallery {
+    margin: 4rem auto;
     display: flex;
     flex-direction: column;
     gap: 4rem;
     align-items: center;
-    width: 100%;
+    width: 90%;
     .header {
       display: flex;
       text-align: center;
@@ -33,7 +34,7 @@
           cursor: pointer;
           width: calc(100% / 5);
           padding: 0.5rem 1rem;
-          background-color: white;
+          background-color: $background;
           font-size: 0.8rem;
           color: $dark-text;
           @media (max-width: $layout-breakpoint-small) {
