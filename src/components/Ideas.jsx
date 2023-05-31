@@ -1,6 +1,49 @@
 import { Link } from "react-router-dom";
+import img1 from "../assets/ideas1.jpg";
+import img2 from "../assets/ideas2.jpg";
+import img3 from "../assets/ideas3.jpg";
+import img4 from "../assets/ideas4.jpg";
+import img5 from "../assets/ideas5.jpg";
+import img6 from "../assets/ideas6.jpg";
+import img7 from "../assets/ideas7.jpg";
+import img8 from "../assets/ideas8.jpg";
 
 export const Ideas = () => {
+  const data = [
+    {
+      id: 1,
+      img: img1,
+    },
+    {
+      id: 2,
+      img: img2,
+    },
+    {
+      id: 3,
+      img: img3,
+    },
+    {
+      id: 4,
+      img: img4,
+    },
+    {
+      id: 5,
+      img: img5,
+    },
+    {
+      id: 6,
+      img: img6,
+    },
+    {
+      id: 7,
+      img: img7,
+    },
+    {
+      id: 8,
+      img: img8,
+    },
+  ];
+
   return (
     <div className="ideas--container">
       <div className="ideas">
@@ -9,30 +52,11 @@ export const Ideas = () => {
           <p>Browse our gallery for tips and inspiration</p>
         </div>
         <div className="grid">
-          <div className="img-container">
-            <img src="https://media.istockphoto.com/id/1464666987/photo/beautiful-emotional-woman-with-natural-make-up.jpg?b=1&s=170667a&w=0&k=20&c=3pBli3ApYNyyNc9MXWkXk3ByDOW-_7nnlL6RuhScEwo=" />
-          </div>
-          <div className="img-container">
-            <img src="https://media.istockphoto.com/id/1440458000/photo/young-girl-with-hands-near-skin-face.jpg?b=1&s=170667a&w=0&k=20&c=vXSG4-x3jbQEqD_l9nwpqdWjAMsmcJjHt6LFAQ2vIDc=" />
-          </div>
-          <div className="img-container">
-            <img src="https://media.istockphoto.com/id/1442495175/photo/beauty-portrait-and-natural-face-of-black-woman-with-healthy-freckle-skin-texture-touch.jpg?b=1&s=170667a&w=0&k=20&c=ROYbN_x6cYubTzSW3EzzaL_NCFjMzoXR2XXch9pXUCo=" />
-          </div>
-          <div className="img-container">
-            <img src="https://media.istockphoto.com/id/1377343276/photo/pretty-young-afro-woman.jpg?b=1&s=170667a&w=0&k=20&c=Z-UXLUcC8MfiHr9OMzH79s50pXovz_WZPW-cbiobFnM=" />
-          </div>
-          <div className="img-container">
-            <img src="https://media.istockphoto.com/id/1409084667/photo/brown-hair-beauty-woman-brunette-model-with-shiny-straight-long-hairstyle-hair-care-spa-and.jpg?b=1&s=170667a&w=0&k=20&c=9Pwz2Uwz2WcgD_bfBBeLI6Eef0GS9aqRCrPyqR0j-G4=" />
-          </div>
-          <div className="img-container">
-            <img src="https://media.istockphoto.com/id/1371802936/photo/beautiful-emotional-woman-with-perfect-make-up.jpg?b=1&s=170667a&w=0&k=20&c=Sdiq2RAY1MmqkzH_EEmGI1BzU7k-vKvN7zfep9CEUok=" />
-          </div>
-          <div className="img-container">
-            <img src="https://media.istockphoto.com/id/1371802936/photo/beautiful-emotional-woman-with-perfect-make-up.jpg?b=1&s=170667a&w=0&k=20&c=Sdiq2RAY1MmqkzH_EEmGI1BzU7k-vKvN7zfep9CEUok=" />
-          </div>
-          <div className="img-container">
-            <img src="https://media.istockphoto.com/id/1371802936/photo/beautiful-emotional-woman-with-perfect-make-up.jpg?b=1&s=170667a&w=0&k=20&c=Sdiq2RAY1MmqkzH_EEmGI1BzU7k-vKvN7zfep9CEUok=" />
-          </div>
+          {data.map((idea) => (
+            <div className="img-container" key={idea.id}>
+              <img src={idea.img} />
+            </div>
+          ))}
         </div>
         <Link to="/gallery">
           <button>VIEW MORE INSPIRATION</button>

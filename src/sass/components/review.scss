@@ -1,6 +1,6 @@
 .review--container {
   margin: 6rem auto;
-  background-image: url("https://nightshade.qodeinteractive.com/wp-content/uploads/2017/10/port-1-img-13.jpg");
+  background-image: url("../assets/reviews-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -28,7 +28,7 @@
     .swiper {
       width: 70%;
       @media (max-width: $layout-breakpoint-xsmall) {
-      width: 90%;
+        width: 90%;
       }
       .swiper-slide {
         .review {
@@ -40,13 +40,12 @@
           text-align: center;
           width: 100%;
           p,
-          h3,
-          span {
+          h3 {
             color: $light-text;
           }
-          h3,
-          span {
+          h3 {
             font-family: "Gwendolyn", cursive;
+            font-size: 1.5rem;
           }
 
           .about {

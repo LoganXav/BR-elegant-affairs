@@ -10,20 +10,20 @@ export const Review = () => {
   const data = [
     {
       id: 1,
-      text: "I love B & Rpppppppppppppppppppppppppppppppppppp",
-      name: "Julia Roberts",
+      text: "B & R Elegant Affairs turned my daughter's birthday party into a whimsical wonderland! The theme they created was beyond our imagination, and the attention to detail was extraordinary. The team was professional, friendly, and attentive throughout the planning process. The children were captivated by the enchanting atmosphere, and the parents were equally impressed. Thank you for making our daughter's birthday celebration truly magical!",
+      name: "Lisa",
       location: "Miami",
     },
     {
       id: 2,
-      text: "I really do love B & Rpppppppppppppppppppppppppppppppppppp",
-      name: "Mila Kunis",
+      text: "B & R Elegant Affairs truly exceeded our expectations! From the moment we started planning our wedding, their team was attentive, organized, and full of creative ideas. The attention to detail was impeccable, and they flawlessly executed every aspect of our big day. Our guests were blown away by the stunning decor and seamless coordination. We couldn't have asked for a better team to bring our dream wedding to life!",
+      name: "Sarah and Jonathan",
       location: "Jacksonville",
     },
     {
       id: 3,
-      text: "Trust me, I really do love B & Rpppppppppppppppppppppppppppppppppppp",
-      name: "Dua Lipa",
+      text: "B & R Elegant Affairs went above and beyond to make our corporate event a huge success. From the initial planning stages to the day of the event, their attention to detail and professionalism were exceptional. The venue was transformed into a sophisticated and elegant space that perfectly reflected our brand. The team flawlessly managed the logistics, ensuring a seamless experience for all attendees. We received numerous compliments from our guests, and we can't recommend B & R Elegant Affairs enough!" ,
+      name: "David",
       location: "Jacksonville",
     },
   ];
@@ -36,7 +36,7 @@ export const Review = () => {
           className="swiper"
           modules={[Pagination, Autoplay]}
           slidesPerView={1}
-          autoplay={{ delay: 4000 }}
+          autoplay={{ delay: 6000 }}
           pagination={{ clickable: true }}
         >
           {data.map((review) => (
@@ -45,7 +45,6 @@ export const Review = () => {
                 <p>{review.text}</p>
                 <div className="about">
                   <h3> - {review.name}</h3>
-                  <span> - {review.location}</span>
                 </div>
               </div>
             </SwiperSlide>
