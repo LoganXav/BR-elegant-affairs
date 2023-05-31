@@ -1,10 +1,12 @@
+import betty from "../assets/betty-crop.jpg";
+
 export const Plan = () => {
   return (
     <div className="plan--container">
     
     
       <div className="plan">
-        <img src="https://demo2wpopal.b-cdn.net/dreama/wp-content/uploads/2019/02/bn1.jpg" />
+        <img src={betty} />
         <div className="plan--details">
           <h2 className="header">B & R Elegant Affairs</h2>
           <p>We're to serve you, step-by-step.</p>

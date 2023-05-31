@@ -7,9 +7,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white;
     width: 98%;
     margin: 1rem auto;
+    color: $dark-text;
 
     .logo {
       img {
@@ -21,10 +21,26 @@
       }
     }
     .menu {
-      transform: translateY(-.5rem);
-      .number {
+      transform: translateY(-0.5rem);
+      .contact {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-family: "Gwendolyn", cursive;
+        font-weight: 700;
+        font-size: 1.2rem;
         @media (max-width: $layout-breakpoint-xsmall) {
           display: none;
+        }
+        i {
+          font-weight: 300;
+          font-size: 2.5rem;
+          color: $icons;
+        }
+        .number {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
         }
       }
       .menu--icon {
@@ -33,7 +49,6 @@
           cursor: pointer;
           display: flex;
           margin-right: 3rem;
-          color: black;
         }
       }
     }
