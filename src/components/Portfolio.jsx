@@ -46,8 +46,8 @@ export const Portfolio = () => {
           <h4>OUR AMAZING WORK</h4>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, x: 200 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           transition={{
             ease: [0.6, 0.01, 0.05, 0.9],
             duration: 1,
