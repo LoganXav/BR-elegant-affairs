@@ -7,8 +7,8 @@ export const Plan = () => {
     <div className="plan--container">
       <div className="plan">
         <motion.div
-          initial={{ opacity: 0, x: -200 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{
             ease: [0.6, 0.01, 0.05, 0.9],
             duration: 1,
@@ -19,8 +19,8 @@ export const Plan = () => {
           <LazyImage img={betty} />
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, x: 200 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{
             ease: [0.6, 0.01, 0.05, 0.9],
             duration: 1,
