@@ -7,7 +7,7 @@ export const LazyImage = ({ img }) => {
     let callback = (entries, observer) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting){
-                // setVisible(true)
+                setVisible(true)
             }})
         }
     
