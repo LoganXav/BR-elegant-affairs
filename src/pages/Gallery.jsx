@@ -29,6 +29,8 @@ import img26 from "../assets/birthday/birthday-6.jpg";
 import img27 from "../assets/birthday/birthday-7.jpg";
 import img28 from "../assets/birthday/birthday-8.jpg";
 import img29 from "../assets/birthday/birthday-9.jpg";
+import img42 from "../assets/birthday/birthday-10.jpg";
+import img43 from "../assets/birthday/birthday11.jpg";
 import img30 from "../assets/baby/baby-1.jpg";
 import img31 from "../assets/baby/baby-2.jpg";
 import img32 from "../assets/baby/baby-3.jpg";
@@ -278,8 +280,6 @@ const Gallery = () => {
       id: 17,
       img: img17,
     },
-  ];
-  const birthday = [
     {
       id: 18,
       img: img18,
@@ -292,6 +292,8 @@ const Gallery = () => {
       id: 20,
       img: img20,
     },
+  ];
+  const birthday = [
     {
       id: 21,
       img: img21,
@@ -316,8 +318,6 @@ const Gallery = () => {
       id: 26,
       img: img26,
     },
-  ];
-  const baby = [
     {
       id: 27,
       img: img27,
@@ -330,6 +330,16 @@ const Gallery = () => {
       id: 29,
       img: img29,
     },
+    {
+      id: 42,
+      img: img42,
+    },
+    {
+      id: 43,
+      img: img43,
+    },
+  ];
+  const baby = [
     {
       id: 30,
       img: img30,
