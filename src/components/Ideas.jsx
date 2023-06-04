@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { LazyImage } from "./LazyImage"
 import img1 from "../assets/ideas1.jpg";
 import img2 from "../assets/ideas2.jpg";
 import img3 from "../assets/ideas3.jpg";
@@ -76,7 +77,7 @@ export const Ideas = () => {
                 className="img-container"
                 key={idea.id}
               >
-                <img src={idea.img} />
+                <LazyImage img={idea.img} />
               </motion.div>
             ))}
           </div>

@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { LazyImage } from "../components/LazyImage"
 import img1 from "../assets/wedding/wedding-1.jpg";
 import img2 from "../assets/wedding/wedding-2.jpg";
 import img3 from "../assets/wedding/wedding-3.jpg";
@@ -16,27 +17,30 @@ import img14 from "../assets/wedding/wedding-14.jpg";
 import img15 from "../assets/wedding/wedding-15.jpg";
 import img16 from "../assets/wedding/wedding-16.jpg";
 import img17 from "../assets/wedding/wedding-17.jpg";
-import img18 from "../assets/birthday/birthday-1.jpg";
-import img19 from "../assets/birthday/birthday-2.jpg";
-import img20 from "../assets/birthday/birthday-3.jpg";
-import img21 from "../assets/birthday/birthday-4.jpg";
-import img22 from "../assets/birthday/birthday-5.jpg";
-import img23 from "../assets/birthday/birthday-6.jpg";
-import img24 from "../assets/birthday/birthday-7.jpg";
-import img25 from "../assets/birthday/birthday-8.jpg";
-import img26 from "../assets/birthday/birthday-9.jpg";
-import img27 from "../assets/baby/baby-1.jpg";
-import img28 from "../assets/baby/baby-2.jpg";
-import img29 from "../assets/baby/baby-3.jpg";
-import img30 from "../assets/baby/baby-4.jpg";
-import img31 from "../assets/baby/baby-5.jpg";
-import img32 from "../assets/baby/baby-6.jpg";
-import img33 from "../assets/baby/baby-7.jpg";
-import img34 from "../assets/baby/baby-8.jpg";
-import img35 from "../assets/baby/baby-9.jpg";
-import img36 from "../assets/baby/baby-10.jpg";
-import img37 from "../assets/baby/baby-11.jpg";
-import img38 from "../assets/baby/baby-12.jpg";
+import img18 from "../assets/wedding/wedding-18.jpg";
+import img19 from "../assets/wedding/wedding-19.jpg";
+import img20 from "../assets/wedding/wedding-20.jpg";
+import img21 from "../assets/birthday/birthday-1.jpg";
+import img22 from "../assets/birthday/birthday-2.jpg";
+import img23 from "../assets/birthday/birthday-3.jpg";
+import img24 from "../assets/birthday/birthday-4.jpg";
+import img25 from "../assets/birthday/birthday-5.jpg";
+import img26 from "../assets/birthday/birthday-6.jpg";
+import img27 from "../assets/birthday/birthday-7.jpg";
+import img28 from "../assets/birthday/birthday-8.jpg";
+import img29 from "../assets/birthday/birthday-9.jpg";
+import img30 from "../assets/baby/baby-1.jpg";
+import img31 from "../assets/baby/baby-2.jpg";
+import img32 from "../assets/baby/baby-3.jpg";
+import img33 from "../assets/baby/baby-4.jpg";
+import img34 from "../assets/baby/baby-5.jpg";
+import img35 from "../assets/baby/baby-6.jpg";
+import img36 from "../assets/baby/baby-7.jpg";
+import img37 from "../assets/baby/baby-8.jpg";
+import img38 from "../assets/baby/baby-9.jpg";
+import img39 from "../assets/baby/baby-10.jpg";
+import img40 from "../assets/baby/baby-11.jpg";
+import img41 from "../assets/baby/baby-12.jpg";
 
 const Gallery = () => {
   const allData = [
@@ -191,6 +195,18 @@ const Gallery = () => {
     {
       id: 38,
       img: img38,
+    },
+    {
+      id: 39,
+      img: img39,
+    },
+    {
+      id: 40,
+      img: img40,
+    },
+    {
+      id: 41,
+      img: img41,
     },
   ];
   const wedding = [
@@ -350,6 +366,18 @@ const Gallery = () => {
       id: 38,
       img: img38,
     },
+    {
+      id: 39,
+      img: img39,
+    },
+    {
+      id: 40,
+      img: img40,
+    },
+    {
+      id: 41,
+      img: img41,
+    },
   ];
 
   const [option, setOption] = useState("all");
@@ -379,19 +407,19 @@ const Gallery = () => {
             {
                 option === "all" ? (allData.map((image) => (
                 <div className="image" key={image.id}>
-                  <img src={image.img} />
+                  <LazyImage img={image.img} />
                 </div>
                 ))): option === "wedding" ? (wedding.map((image) => (
                 <div className="image" key={image.id}>
-                  <img src={image.img} />
+                  <LazyImage img={image.img} />
                 </div>
                 ))): option === "birthday" ? (birthday.map((image) => (
                 <div className="image" key={image.id}>
-                  <img src={image.img} />
+                  <LazyImage img={image.img} />
                 </div>
                 ))): option === "baby" ? (baby.map((image) => (
                 <div className="image" key={image.id}>
-                  <img src={image.img} />
+                  <LazyImage img={image.img} />
                 </div>
                 ))) : null
             }

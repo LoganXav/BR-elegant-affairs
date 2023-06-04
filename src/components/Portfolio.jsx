@@ -9,24 +9,24 @@ export const Portfolio = () => {
   const data = [
     {
       id: 1,
-      name: "Nicole and Micheal",
+      name: "Richard and Junide",
       img: img3,
-      location: "The Moore Building, Miami",
-      year: "2019",
+      location: "Miami",
+      year: "2023",
     },
     {
       id: 2,
-      name: "Alberta",
+      name: "Natasha",
       img: img1,
-      location: "Collins Avenue, Miami",
+      location: "Miami",
       year: "2021",
     },
     {
       id: 3,
-      name: "George and Abby",
+      name: "Demetri and Katia",
       img: img2,
-      location: "South Miami, Miami",
-      year: "2022",
+      location: "Miami",
+      year: "2018",
     },
   ];
   return (

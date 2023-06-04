@@ -1,4 +1,23 @@
 body {
-    background: $background
-    // overflow: hidden;
+  background: $background;
+  // overflow: hidden;
+}
+
+.skeleton {
+  width: 100%;
+  height: 100%;
+  background-color: $background;
+  animation: skeleton 1s ease infinite alternate;
+}
+
+@keyframes skeleton {
+  to{
+    opacity: 0.5
   }
+}
+
+.circle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

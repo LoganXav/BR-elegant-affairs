@@ -1,11 +1,17 @@
-import { createBrowserRouter, RouterProvider, Outlet, Navigate } from "react-router-dom";
-import Home from "./pages/Home";
-import Gallery from "./pages/Gallery";
+import { lazy, Suspense } from "react";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Outlet,
+  Navigate,
+} from "react-router-dom";
+import CircularProgress from '@mui/material/CircularProgress';
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Home from "./pages/Home";
+
+const Gallery = lazy(() => import("./pages/Gallery"));
 import "./sass/main.scss";
-
-
 
 const Layout = () => {
   return (
@@ -16,7 +22,6 @@ const Layout = () => {
     </div>
   );
 };
-
 
 const router = createBrowserRouter([
   {
@@ -29,9 +34,12 @@ const router = createBrowserRouter([
       },
       {
         path: "/gallery",
-        element: <Gallery />,
+        element: (
+          <Suspense fallback={<div className="circle"><CircularProgress /></div>}>
+            <Gallery />
+          </Suspense>
+        ),
       },
-      
     ],
   },
 ]);
@@ -45,3 +53,5 @@ function App() {
 }
 
 export default App;
+
+

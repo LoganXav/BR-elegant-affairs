@@ -1,5 +1,6 @@
 import betty from "../assets/betty-crop.png";
 import { motion } from "framer-motion";
+import { LazyImage } from "./LazyImage"
 
 export const Plan = () => {
   return (
@@ -15,7 +16,7 @@ export const Plan = () => {
           viewport={{ once: true }}
           className="image"
         >
-          <img src={betty} />
+          <LazyImage img={betty} />
         </motion.div>
         <motion.div
           initial={{ opacity: 0, x: 200 }}

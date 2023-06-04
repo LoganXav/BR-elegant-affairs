@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import { motion } from "framer-motion";
+import { LazyImage } from "./LazyImage"
 import logo from "../assets/logo.png";
 import img1 from "../assets/ideas1.jpg";
 import img2 from "../assets/ideas2.jpg";
@@ -69,7 +70,9 @@ export const Menu = ({ setMenuOpen }) => {
             </div>
             <div className="grid">
               {data.map((idea) => (
-                <img key={idea.img} src={idea.img} />
+                <div key={idea.img} className="img">
+                <LazyImage img={idea.img} />
+                </div>
               ))}
             </div>
             <div className="address">
