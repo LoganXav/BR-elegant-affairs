@@ -30,7 +30,7 @@ import img27 from "../assets/birthday/birthday-7.jpg";
 import img28 from "../assets/birthday/birthday-8.jpg";
 import img29 from "../assets/birthday/birthday-9.jpg";
 import img42 from "../assets/birthday/birthday-10.jpg";
-import img43 from "../assets/birthday/birthday11.jpg";
+import img43 from "../assets/birthday/birthday-11.jpg";
 import img30 from "../assets/baby/baby-1.jpg";
 import img31 from "../assets/baby/baby-2.jpg";
 import img32 from "../assets/baby/baby-3.jpg";
