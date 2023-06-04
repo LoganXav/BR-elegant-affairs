@@ -42,6 +42,7 @@
         .img {
           width: calc(100% / 3.3);
           aspect-ratio: 1/1;
+          background-color: $background;
           img {
             width: 100%;
             height: 100%;
