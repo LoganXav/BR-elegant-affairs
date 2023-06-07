@@ -8,29 +8,24 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="navbar--container"
-   
-    >
-      <motion.div 
-       initial={{ opacity: 0, y: -50 }}
-       whileInView={{ opacity: 1, y: 0 }}
-       transition={{
-         ease: [0.6, 0.01, 0.05, 0.9],
-         duration: 1,
-       }}
-       viewport={{ once: true }}
-      className="navbar">
+    <div className="navbar--container">
+      <motion.div
+        initial={{ opacity: 0, y: -50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          ease: [0.6, 0.01, 0.05, 0.9],
+          duration: 1,
+        }}
+        viewport={{ once: true }}
+        className="navbar"
+      >
         <Link to="/" className="link">
-          <div
-            className="logo"
-          >
+          <div className="logo">
             <img src={logo} />
           </div>
         </Link>
         <div className="menu">
-          <div
-            className="contact"
-          >
+          <div className="contact">
             <i className="ri-phone-line"></i>
             <div className="number">
               <h3>T: +1 (305) 586-0497</h3>
