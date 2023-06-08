@@ -33,6 +33,10 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
+        path: "*",
+        element: <Home />,
+      },
+      {
         path: "/gallery",
         element: (
           <Suspense fallback={<div className="circle"><CircularProgress /></div>}>
@@ -53,5 +57,9 @@ function App() {
 }
 
 export default App;
+
+{/* <Routes>
+  <Route path= "/" element = {<Layout />}></Route>
+</Routes> */}
 
 

@@ -85,16 +85,14 @@ export const Menu = ({ setMenuOpen }) => {
             </div>
             <div className="buttons">
               <span>
-                <i className="ri-facebook-circle-fill"></i>
-              </span>
-              <span>
-                <i className="ri-twitter-fill"></i>
-              </span>
-              <span>
+              <a href="https://www.instagram.com/br_elegantaffairsllc" style={{color: "inherit", textDecoration: "none"}}>
                 <i className="ri-instagram-fill"></i>
+                </a>
               </span>
               <span>
+              <a href="https://www.youtube.com/user/periclesbebe" style={{color: "inherit", textDecoration: "none"}}>
                 <i className="ri-youtube-fill"></i>
+                </a>
               </span>
             </div>
           </div>
