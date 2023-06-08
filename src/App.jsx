@@ -18,7 +18,7 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />}></Route>
+          <Route path="/" element={<Home />}/>
           <Route
             path="/gallery"
             element={
@@ -32,7 +32,7 @@ function App() {
                 <Gallery />
               </Suspense>
             }
-          ></Route>
+          />
         </Routes>
         <Footer />
       </BrowserRouter>
