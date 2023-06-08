@@ -1,4 +1,4 @@
-import betty from "../assets/betty-crop2.jpg";
+import betty from "../assets/betty2.jpg";
 import { motion } from "framer-motion";
 import { LazyImage } from "./LazyImage"
 

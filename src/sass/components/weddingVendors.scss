@@ -1,7 +1,8 @@
 .vendors--container {
   width: 100%;
+  max-width: 1500px;
   display: flex;
-  margin-top: 6rem;
+  margin: 8rem auto;
   flex-direction: row;
   background-image: url("../assets/wedding-vendors.jpg");
   background-repeat: no-repeat;
@@ -20,7 +21,7 @@
     align-items: center;
     justify-content: center;
     background-color: $bg-light;
-    transform: translate(1rem, -2rem);
+    transform: translate(3rem, -2rem);
     @media (max-width: $layout-breakpoint-medium) {
       width: calc(100% / 2);
     }

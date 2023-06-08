@@ -6,6 +6,7 @@
   background-position: center;
   .plan {
     width: 80%;
+    max-width: 1500px;
     margin: 0rem auto;
     display: flex;
     align-items: center;
@@ -19,12 +20,12 @@
     .image{
       width: calc(100% / 1);
       aspect-ratio: 1 / 1;
-      // border-radius: 50%;
+      border-radius: 50%;
       background-color: transparent;
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 2rem;
+      // padding: 2rem;
       overflow: hidden;
       @media (max-width: $layout-breakpoint-xsmall) {
         padding: 4rem;
